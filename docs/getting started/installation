@@ -1,0 +1,68 @@
+# Installation: Instructions on How to Install and Set Up Carrot
+
+## Overview
+
+Carrot is a powerful language for writing PRDs based on Gherkin syntax. To enhance your experience in writing Carrot scenarios, we have developed a Visual Studio Code extension called "Carrot (Gherkin extension) Syntax and Snippets." This extension provides syntax highlighting for .feature files and offers code snippets or templates to write Carrot scenarios faster. Follow the instructions below to install and set up the extension in your Visual Studio Code environment.
+
+## Prerequisites
+
+Before installing the Carrot extension, ensure that you have the following:
+
+- Visual Studio Code installed on your machine. If you don't have it, you can download it from the [official Visual Studio Code website](https://code.visualstudio.com/).
+
+## Installation Steps
+
+To install and set up the Carrot Visual Studio Code extension, follow these steps:
+
+1. Open Visual Studio Code on your machine.
+
+2. Open the Command Palette by pressing `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
+
+3. In the Command Palette, type "Extensions: Install Extensions" and press `Enter`.
+
+4. In the Extensions panel, search for "Carrot (Gherkin extension) Syntax and Snippets".
+
+5. Click on the extension and then click the "Install" button.
+
+6. Once the installation is complete, reload Visual Studio Code for the changes to take effect.
+
+7. After reloading, the extension will automatically provide syntax highlighting for .feature files. If the highlighting is not applied, you can manually set the language mode by opening the Command Palette, typing "Change Language Mode," and selecting "Gherkin".
+
+## Using Code Snippets
+
+The Carrot extension provides various code snippets or templates to help you write Carrot scenarios faster. To use these snippets, follow these steps:
+
+1. Open a .feature file in Visual Studio Code.
+
+2. Type the prefix for the desired snippet (e.g., "sc" for a Scenario heading).
+
+3. As you type the prefix, Visual Studio Code will suggest the available snippets.
+
+4. Press `Tab` to insert the snippet at the current cursor position.
+
+5. Customize the snippet by filling in the relevant information for your scenario.
+
+Below is a list of available code snippets and their prefixes:
+
+- `fea`: Feature
+- `sc`: Scenario heading
+- `sce`: Scenario
+- `sco`: Scenario Outline
+- `steps`: Multiline steps
+- `giv`: Given step
+- `whe`: When step
+- `the`: Then step
+- `des`: Design link
+- `suc`: Success criteria
+- `kpi`: KPI to track
+- `imp`: Impact expected
+
+Please refer to the [GitHub project](https://github.com/talvinder/vscode-carrot-extension) for the Carrot Visual Studio Code extension for more information, bug reporting, and contributions.
+
+## Conclusion
+
+By following these installation instructions and utilizing the code snippets provided by the Carrot extension, you can enhance your productivity and streamline your Carrot scenario writing process within Visual Studio Code.
+
+If you encounter any issues or have suggestions for improvement, please feel free to reach out through the GitHub project page.
+
+Happy Carroting! 🥕🚀

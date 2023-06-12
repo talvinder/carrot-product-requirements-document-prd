@@ -1,0 +1,87 @@
+# Carrot PRD Syntax Guide
+
+Carrot is a domain-specific language that enhances the process of writing Product Requirement Documents (PRDs) using Gherkin-like syntax. This guide provides a detailed explanation of the basic syntax used in Carrot, along with examples from various use cases.
+
+## Syntax Overview
+
+The Carrot PRD syntax consists of several keywords that help structure and define the PRD. Each keyword serves a specific purpose and contributes to the clarity and readability of the document. Below is an overview of the key syntax elements in Carrot:
+
+| Keyword     | Description                             | Example                                         |
+|-------------|-----------------------------------------|-------------------------------------------------|
+| FEATURE     | Defines the main feature or user story   | `FEATURE Shopping cart`                         |
+| As a        | Describes the role or persona            | `As a visitor`                                  |
+| I will like to | States the desired action or goal       | `I will like to add products to the cart`       |
+| so that     | Explains the purpose or benefit          | `so that I can buy the products together`       |
+| PROBLEM     | Describes the problem or pain point      | `PROBLEM Too many steps across products`        |
+| OKR         | Outlines the Objectives and Key Results | `OKR`                                           |
+| EPIC        | Represents an Epic or larger goal       | `EPIC`                                          |
+| SPRINT      | Specifies the Sprint or iteration       | `SPRINT`                                        |
+| BACKGROUND  | Provides context or preconditions       | `BACKGROUND`                                    |
+| Given       | Defines a precondition or initial state  | `Given: User is on the search result page`      |
+| Scenario    | Describes a specific scenario            | `Scenario: Logged in User`                       |
+| When        | Specifies an action or event             | `When: User clicks on Add to Cart button`       |
+| Then        | Indicates an expected outcome            | `Then: New product is added to items in cart`   |
+| And         | Adds additional steps or conditions      | `And: Successful message is displayed to user`  |
+| Design      | Provides a link to the design             | `Design: https://figma.com/random-something`    |
+| Success     | Defines the expected success outcome     | `Success: Improved add to cart experience`      |
+| KPI         | Identifies Key Performance Indicators    | `Kpi: add to cart clicked/add to cart successful` |
+| Benchmark   | Sets a performance benchmark             | `Benchmark: 99.9999% success rate on add to cart addition` |
+| Impact      | Describes the expected impact             | `Impact: Improved cart additions and reduced bounce off` |
+
+## Examples
+
+### Feature and User Story
+
+FEATURE Shopping cart
+
+As a visitor
+
+I will like to add products to the cart
+
+so that I can buy the products together
+
+
+
+### Problem Statement
+
+PROBLEM Too many steps across products
+
+Buying our products requires a lot of steps. The visitor browses the website to find one or more products. Then they click on the Whatsapp icon on-site to launch a chat with us on Whatsapp. Then they paste the link of the products they liked, we confirm if the products are available and how soon will they be delivered. Then we share a QR code on Whatsapp for them to make the payment. Post this, we update our backend inventory and create a shipping request to service the order. These are a lot of steps for simple ordering and hence causing operational issues and customer dissatisfaction.
+
+
+### Scenario with Steps
+
+Scenario: Logged in User
+
+Given: User is logged in
+
+And: User has products in the cart
+
+When: User clicks on Add to Cart button
+
+Then: New product is added to items in cart
+
+And: Successful message is displayed to user “<Product> added to cart”
+
+And: Count of items in the cart increases in realtime without page refresh
+
+
+### Design and Success Criteria
+
+Design: https://figma.com/random-something
+
+Success: Improved add to cart experience
+
+Kpi: add to cart clicked/add to cart successful
+
+Benchmark: 99.9999% success rate on add to cart addition
+
+Impact: Improved cart additions and reduced bounce off
+
+
+
+
+This is just a small sample of the syntax and examples used in Carrot PRDs. The language provides a structured and standardized format for documenting product requirements, making it easier to communicate and collaborate within cross-functional teams.
+
+For more detailed syntax and advanced usage, please refer to the [Carrot PRD Syntax Guide](./carrot-prd-syntax-guide.md) and explore the examples provided in the [examples](./examples) directory.
+
