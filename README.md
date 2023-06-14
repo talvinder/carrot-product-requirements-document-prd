@@ -80,24 +80,20 @@ One of the key advantages of Carrot is its ability to track objects and trace ac
 
 **Example:**
 
-```gherkin
-Feature: Shopping Cart
-  As a customer
-  I want to add and remove items from my shopping cart
-  So that
+| Object          | Action             | Status   | PRD Title                         |
+|-----------------|--------------------|----------|-----------------------------------|
+| User            | Create Account     | Planned  | User Management                   |
+| User            | Log In             | Implemented | User Authentication            |
+| User            | Update Profile     | Planned  | User Profile Management           |
+| Product         | Add to Cart        | Implemented | Shopping Cart                  |
+| Product         | Remove from Cart   | Planned  | Shopping Cart                      |
+| Product         | View Details       | Implemented | Product Details                  |
+| Order           | Place Order        | Implemented | Order Placement                 |
+| Order           | Cancel Order       | Planned  | Order Management                  |
+| Payment         | Make Payment       | Planned  | Payment Processing                |
+| Payment         | Refund Payment     | Implemented | Payment Refunds                 |
 
- I can review and purchase them later
-
-  Scenario: Adding Items to the Cart
-    Given I have a shopping cart
-    When I add an item with SKU "<sku>"
-    Then the item should be added to my cart
-
-  Scenario: Removing Items from the Cart
-    Given I have items in my shopping cart
-    When I remove an item with SKU "<sku>"
-    Then the item should be removed from my cart
-```
+Please note that this is just a simplified example to demonstrate how the table could be structured. In a real-world scenario, the table would include more objects, actions, and PRDs, along with additional columns such as priority, release version, and more detailed status information.
 
 ## Conclusion
 
